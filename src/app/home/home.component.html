@@ -1,5 +1,6 @@
 <div class="test">
     <p>Chào bạn {{name}}</p>
+
     <!-- Binding giá trị theo 2 cách -->
     <!-- <input value=" {{name}}">
     <br>
@@ -13,5 +14,7 @@
     <h2 *ngIf="age > 18">Bạn già rồi đấy</h2>
     <h2 *ngIf="age <= 18">Bạn còn non lắm :>>></h2>
 
+    <button (click)="resetName()">reset Tên</button>
+    <input type="text" [(ngModel)]="name">
 </div>
 <!-- chạy bằng cách npm start -->
