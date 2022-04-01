@@ -1,6 +1,17 @@
 <div class="test">
-    <p>From component Home</p>
-    <p>Mãi mãi một tình iêu</p>
-    <h1>Tạo component home bằng cách >ng g c _nameComponents</h1>
+    <p>Chào bạn {{name}}</p>
+    <!-- Binding giá trị theo 2 cách -->
+    <!-- <input value=" {{name}}">
+    <br>
+    <input [value]="name" title="Đây là name">
+    <br>
+    <input [value]="name" title="Đây là {{name}}">
+    <input [value]="name" [title]="'Đây là ' + name">
+    <h1>Tạo component home bằng cách >ng g c _nameComponents</h1> -->
+
+    <!-- Câu điều kiện if else-->
+    <h2 *ngIf="age > 18">Bạn già rồi đấy</h2>
+    <h2 *ngIf="age <= 18">Bạn còn non lắm :>>></h2>
+
 </div>
 <!-- chạy bằng cách npm start -->
